@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAMEポモドーロ</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>SAMEポモドーロ</h1>
+        <div class="shark-image-container">
+            <img src="same_pomodoro.png" alt="SAME" class="shark-img">
+        </div>
+        
+        <div class="mode-selector">
+            <button class="mode-btn active" data-mode="affirm">アファメーション</button>
+            <button class="mode-btn" data-mode="main">メインポモ</button>
+            <button class="mode-btn" data-mode="break">休憩ポモ</button>
+            <button class="mode-btn" data-mode="auto">オートポモ</button>
+        </div>
+        
+        <div class="timer-container">
+            <div class="timer-display">
+                <span id="minutes">25</span>:<span id="seconds">00</span>
+            </div>
+            
+            <div class="timer-mode">
+                <span id="mode-label">アファメーション</span>
+            </div>
+            <div class="message-container">
+                <p id="message-text">この25分間のゴールをイメージしよう</p>
+            </div>
+            
+            <div class="progress-bar">
+                <div id="progress" class="progress"></div>
+            </div>
+            
+            <div class="controls">
+                <button id="start-btn" class="btn"><i class="fas fa-play"></i> START</button>
+                <button id="skip-btn" class="btn"><i class="fas fa-forward"></i> SKIP</button>
+                <button id="stop-btn" class="btn"><i class="fas fa-stop"></i> STOP</button>
+            </div>
+        </div>
+        
+        <div class="pomodoro-info">
+            <div id="current-mode-info">現在のモード: アファメーション (1分)</div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>© 2025 SAMEポモドーロ</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
